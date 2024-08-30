@@ -1,16 +1,8 @@
-/************************* Cards *************************/
-#cards {
-    background-color: var(--gray-200);
-    padding-block: 72px 144px;
-}
 section header {
-    span{
-        font: var(--sub-title);
+    h2{
         color: var(--red);
     }
     h3 {
-        font: var(--title-md);
-        color: var(--gray-600);
         padding-block: 8px 56px;
     }
     p {
@@ -19,88 +11,77 @@ section header {
     }
 }
 
-/************************* Projects *************************/
+#my-projects {
+    background-color: var(--gray-200);
+    padding-block: 72px 144px;
 
-#projects {
-    width: 1040px;
-    margin: auto;
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
-    
-    div {
-        width: 330px;
+    #projects {
+        max-width: 1040px;
         margin: auto;
-        padding: 12px 12px 17px 12px;
-        border-radius: 12px;
-        background-color: var(--gray-300);
-        cursor: pointer; 
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        
+        div {
+            max-width: 330px;
+            padding: 12px 12px 17px 12px;
+            border-radius: 12px;
+            border: 1.5px solid var(--gray-300);
+            background-color: var(--gray-300);
+            cursor: pointer; 
 
-        &:hover{
-            border: 1.5px solid var(--gray-400);
-
+            &:hover{
+                border: 1.5px solid var(--gray-400);
+            }
+            img {
+                max-width: 306px;
+                border-radius: 8px;
+            }
+            h4 {
+                margin: 24px 4px 8px 4px;
+            }
+            p {
+                color: var(--gray-500);
+                margin: 0 4px 4px 4px;
+            }
         }
     }
 }
 
-#projects div {/*****Formatação do Cards*****/
-    
-    img {
-        width: 306px;
-        height: 156px;
-        object-fit: cover;
-        align-self: center;
-        border-radius: 8px;
-    }
-    h4 {
-        font: var(--text);
-        color: var(--gray-600);
-        margin: 24px 4px 8px 4px;
-    }
-    p {
-        font: var(--text-sm);
-        color: var(--gray-500);
-        margin: 0 4px 4px 4px;
-    }
-}
 
-
-/************************* Services *************************/
-
-#services {
+#my-services {
     background-color: var(--gray-100);
     padding-block: 88px 120px;
     margin: auto;
-}
 
-#services .cards-services {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin: auto;
+    #services {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin: auto;
 
-    div {
-        width: 280px;
-        height: 155px;
-        border: 2px solid var(--gray-200);
-        border-radius: 12px;
-        padding: 20px;
-        cursor: pointer;
+        div {
+            width: 280px;
+            height: 155px;
+            border: 2px solid var(--gray-200);
+            border-radius: 12px;
+            padding: 20px;
+            cursor: pointer;
 
-        h4{
-            font: var(--title-sm);
-            color: var(--gray-600);
-            margin-block: 20px 8px;
-        }
-        span{
-            font: var(--text-sm);
-            color: var(--gray-500);
+            h4{
+                color: var(--gray-500);
+                margin-block: 20px 8px;
+            }
+            span{
+                font: var(--text-sm);
+                color: var(--gray-500);
+            }
         }
     }
 }
 
-/************************* Contact *************************/
+
 #contact {
     background-image: url(../Assets/Images/Background_Contacts.png);
     background-repeat: no-repeat;
